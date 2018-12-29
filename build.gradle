@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'cn.deivifish'
+version '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.springframework:spring-core:4.3.17.RELEASE'
+    compileOnly 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+}

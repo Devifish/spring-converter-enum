@@ -1,0 +1,9 @@
+# Editor directories and files
+.idea
+.vscode
+
+# Tools directories and files
+.gradle
+
+# Build directories
+build
