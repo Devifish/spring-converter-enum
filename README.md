@@ -3,6 +3,12 @@
 > 同样也可用于 Spring Boot （包含 Spring MVC）<br/>
 > 基于 Java 8 开发，所以运行环境必须 java 8 或 以上
 
+## 安装
+下载 releases 里已经构建过的 jar 附件，项目导入该 jar 包<br/>
+也可 clone 代码直接 copy 至项目内使用<br/>
+
+JAR：[**下载**](https://gitee.com/Devifish/spring-converter-enum/releases) 
+
 ## 使用
 
 #### 配置方法
@@ -13,7 +19,7 @@
 <bean id="conversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">
     <property name="converters">
         <set>
-            <bean class="com.diange.spring.EnumConverterFactory" />
+            <bean class="cn.devifish.spring.EnumConverterFactory" />
         </set>
     </property>
 </bean>
@@ -70,7 +76,7 @@ private LeaveType leaveType;
 或
 ```java
 @Convert(converter = LeaveTypeConverter.class)
-public BloodType getLeaveType() {
+public LeaveType getLeaveType() {
     return leaveType;
 }
 ```
